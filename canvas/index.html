@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1 day</title>
+	<!-- <link rel="stylesheet" href="main.css"> -->
+</head>
+<body>
+
+	<canvas id="draw" width="800" height="800"></canvas>
+
+	<div class="wrapper">
+
+		<div class="options-item">
+			<label>
+				Цвет
+				<input type="range" name="color" min="0" max="360" value="">
+				<input type="color" name="color_range" value="indigo">
+			</label>
+			<div class="value color" style="background-color: indigo;">
+			</div>
+		</div>
+		<div class="options-item">
+			<label>
+				Размер пера
+				<input type="range" name="width" min="1" max="10" value="1">
+			</label>
+			<div class="value width">1</div>
+		</div>
+
+	</div>
+
+	<script src="../bundle.js"></script>
+	<script>
+		main.canvasPaint();
+	</script>
+
+</body>
+</html>

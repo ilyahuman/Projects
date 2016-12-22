@@ -1,0 +1,1 @@
+import  {canvasPaint} from './components/canvas/canvas-paint';
